@@ -1,0 +1,58 @@
+/*#252830
+#434857
+#1e2127
+#585e72*/
+html, body {
+	background: #252830;
+}
+.logo {
+	margin: 3vh 0;
+	width: 8vh;
+}
+.btn-dark {
+	
+}
+.bg-dark {
+	background-color: #434857 !important;
+}
+.navbar, .main-container {
+	box-shadow: 0px 7px 10px -1px rgba(0,0,0,.37);
+}
+.main-container {
+	margin-top: 2vh;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 0;
+	background: #434857;
+}
+.main-container .card-header, .main-container .card-body {
+	border-radius: 0;
+	color: white;
+}
+.main-container .card-header {
+	background: #585e72;
+	text-transform: uppercase;
+	margin: 10px 10px 0;
+	transition: all .3s cubic-bezier(.175,.885,.32,1.275);
+}
+.main-container .card-header:hover {
+	cursor: pointer;
+	box-shadow: 0px 7px 10px -1px rgba(0,0,0,.37);
+	transform: translateY(-3px);
+}
+#main-container-modal .modal-content {
+	background-color: #434857;
+	border-radius: 0;
+	border: none;
+}
+#main-container-modal .modal-header {
+	background-color: #585e72;
+}
+#main-container-modal .modal-header, #main-container-modal .modal-footer {
+	border: none;
+	border-radius: 0;
+}
+.col-sm-12, .col-md-4, .col-md-6, .col-md-8, .col-md-10, .col-md-12 {
+	padding: 0;
+}
