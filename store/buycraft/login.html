@@ -54,92 +54,38 @@
       <div class="col-sm-12 col-md-8">
         <div class="container-fluid">
           <div class="row">
-            <div class="card main-container">
-              <h5 class="login-text" data-toggle="modal" data-target="">Please enter your username to continue</h5>
+            <div class="card dark-container">
+              <h4 class="card-header" data-toggle="modal" data-target="">Login</h4>
               <div class="card-body">
+                <div class="card-title">
+                  <h5>Please enter your minecraft username.</h5>
+                </div>
                 <form method="post">
-                    <div class="username">
-                      <div class="input-group">
-                        <input type="text" name="username" class="form-control input-lg btn btn-dark btn-dark-input" placeholder="PiggyPiglet">
-                        <div class="input-group-btn"><button class="btn btn-dark btn-lg" type="submit">Continue</button></div>
-                      </div>
-                    </div>
-                  </form>
+                  <div class="input-group">
+                    <input type="text" name="username" class="form-control btn btn-dark btn-dark-input" placeholder="PiggyPiglet" required>
+                    <button class="btn btn-dark" type="submit">Continue</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-4">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="card main-container sidebar">
-              <h5 class="card-header">Recent Payments</h5>
-              <div class="card-body">
-               <div class="panel-body">
-      <ul class="payments">
-                    <li>
-              <div class="avatar">
-                <img src="http://cravatar.eu/helmhead/LostLexi/28">
-              </div>
-              <div class="info">
-                <div class="ign">
-                    LostLexi
-                                    </div>
-                <div class="extra">
-                                                                            </div>
-              </div>
-            </li>
-                    <li>
-              <div class="avatar">
-                <img src="http://cravatar.eu/helmhead/LostLexi/28">
-              </div>
-              <div class="info">
-                <div class="ign">
-                    LostLexi
-                                    </div>
-                <div class="extra">
-                                                                            </div>
-              </div>
-            </li>
-                    <li>
-              <div class="avatar">
-                <img src="http://cravatar.eu/helmhead/DillyDee/28">
-              </div>
-              <div class="info">
-                <div class="ign">
-                    DillyDee
-                                    </div>
-                <div class="extra">
-                                                                            </div>
-              </div>
-            </li>
-                    <li>
-              <div class="avatar">
-                <img src="http://cravatar.eu/helmhead/CallMeDaddyy_/28">
-              </div>
-              <div class="info">
-                <div class="ign">
-                    CallMeDaddyy_
-                                    </div>
-                <div class="extra">
-                                                                            </div>
-              </div>
-            </li>
-                    <li>
-              <div class="avatar">
-                <img src="http://cravatar.eu/helmhead/LilDasher/28">
-              </div>
-              <div class="info">
-                <div class="ign">
-                    LilDasher
-                                    </div>
-                <div class="extra">
-                                                                            </div>
-              </div>
-            </li>
-              </ul>
-    </div>
+        <div class="card dark-container">
+          <h4 class="card-header">Recent Payments</h4>
+          <div class="card-body">
+            <div class="payments">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-2" style="padding: 0">
+                    <img src="https://visage.surgeplay.com/head/500/PiggyPiglet.png">
+                  </div>
+                  <div class="col-sm-10" style="padding: 0">
+                    <p>test</p>
+                  </div>
+                  <!-- How do I get rid of the excess space under this??! -->
+                </div>
               </div>
             </div>
           </div>
@@ -147,12 +93,27 @@
       </div>
     </div>
   </div>
-</div>
-</div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="includes/js/main.js"></script>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <a href="#" class="btn btn-dark">Language</a>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p class="minepos-link float-md-right">Powered by <a href="https://minepos.net">MinePoS</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="includes/js/main.js"></script>
 </body>
 </html>
