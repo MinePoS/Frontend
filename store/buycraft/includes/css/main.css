@@ -13,6 +13,9 @@ html, body {
 body > .container {
   flex: 1;
 }
+.container {
+	padding: 0 5.6vw;
+}
 .logo {
   margin: 3vh 0;
   width: 8vh;
@@ -24,6 +27,9 @@ body > .container {
 @media (max-width: 576px) {
   .logo {
     margin: 0 auto;
+  }
+  .container {
+  	padding: 0 5vw;
   }
 }
 .btn-dark, .btn-dark:focus {
