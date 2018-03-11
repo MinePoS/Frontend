@@ -17,7 +17,12 @@
 			</div>
 			<div class="col-sm-12 col-md-6">
 				<a href="#" class="btn btn-dark top-btn float-md-right">Cart</a>
-				<a href="#" class="btn btn-dark top-btn float-md-right">USD</a>
+				<a class="btn btn-dark top-btn float-md-right dropdown-toggle" href="#" id="currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD</a>
+				<div class="dropdown-menu" aria-labelledby="currency">
+					<a class="dropdown-item" href="#">AUD</a>
+					<a class="dropdown-item" href="#">GBP</a>
+				</div>
+				<a href="#" class="btn btn-red top-btn float-md-right">Logout</a>
 			</div>
 		</div>
 		<div class="row">
@@ -54,7 +59,7 @@
 			<div class="col-sm-12 col-md-8">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="card dark-container">
+						<div class="card dark-container main-container">
 							<h4 class="card-header" data-toggle="modal" data-target="#main-container-modal">Title</h4>
 							<div class="card-body">
 								<center>
@@ -81,7 +86,6 @@
 									<div class="col-sm-10" style="padding: 0">
 										<p>test</p>
 									</div>
-									<!-- How do I get rid of the excess space under this??! -->
 								</div>
 							</div>
 						</div>
@@ -118,7 +122,11 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 col-md-6">
-				<a href="#" class="btn btn-dark">Language</a>
+				<a class="btn btn-dark dropdown-toggle" href="#" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+				<div class="dropdown-menu" aria-labelledby="language">
+					<a class="dropdown-item" href="#">englersh</a>
+					<a class="dropdown-item" href="#">oof</a>
+				</div>
 			</div>
 			<div class="col-sm-12 col-md-6">
 				<p class="minepos-link float-md-right">Powered by <a href="https://minepos.net">MinePoS</a>.</p>

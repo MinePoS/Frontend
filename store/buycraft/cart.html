@@ -7,6 +7,7 @@
 	<link rel="icon" type="image/png" href="includes/img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
 	<link rel="stylesheet" type="text/css" href="includes/css/main.css">
 </head>
 <body>
@@ -37,11 +38,11 @@
 							<li class="nav-item">
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
-							<li class="nav-item active dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="ranks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranks <span class="sr-only">(current)</span></a>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="ranks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ranks</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item" data-toggle="tab" href="#ranks-tab">Ranks</a>
-									<a class="dropdown-item" data-toggle="tab" href="#upgrades-tab">Upgrades</a>
+									<a class="dropdown-item" href="ranks.html#ranks-tab">Ranks</a>
+									<a class="dropdown-item" href="ranks.html#upgrades-tab">Upgrades</a>
 								</div>
 							</li>
 							<li class="nav-item">
@@ -56,66 +57,90 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12 col-md-8">
+			<div class="col-sm-12">
 				<div class="card dark-container main-container">
 					<div class="tab-content" id="tab-content">
 						<div class="tab-pane fade show active" id="ranks-tab">
-							<h4 class="card-header" data-toggle="modal" data-target="#main-container-modal">Ranks</h4>
+							<h4 class="card-header" data-toggle="modal" data-target="#main-container-modal">Cart</h4>
 							<div class="card-body">
-								<table class="table table-custom">
-									<tbody>
-										<tr>
-											<td>Adept</td>
-											<td><p class="float-right">$50 <a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Buy</a></p></td>
-										</tr>
-										<tr>
-											<td>Adept</td>
-											<td><p class="float-right">$50 <a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Buy</a></p></td>
-										</tr>
-										<tr>
-											<td>Adept</td>
-											<td><p class="float-right">$50 <a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Buy</a></p></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="upgrades-tab">
-							<h4 class="card-header" data-toggle="modal" data-target="#main-container-modal">Upgrades</h4>
-							<div class="card-body">
-								<table class="table table-custom">
-									<tbody>
-										<tr>
-											<td>Adept</td>
-											<td><p class="float-right">$50 <a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Buy</a></p></td>
-										</tr>
-										<tr>
-											<td>Adept</td>
-											<td><p class="float-right">$50 <a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Buy</a></p></td>
-										</tr>
-										<tr>
-											<td>Adept</td>
-											<td><p class="float-right">$50 <a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Buy</a></p></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-4">
-				<div class="card dark-container">
-					<h4 class="card-header">Recent Payments</h4>
-					<div class="card-body">
-						<div class="payments">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-sm-2" style="padding: 0">
-										<img src="https://visage.surgeplay.com/head/500/PiggyPiglet.png">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-sm-12" style="padding: 0">
+											<table class="table table-custom">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Price</th>
+														<th>Amt</th>
+														<th><span class="float-right">Options</span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Adept</td>
+														<td>5</td>
+														<td>
+															<input type="number" class="btn btn-dark btn-dark-input">
+														</td>
+														<td>
+															<div class="float-right">
+																<div class="pretty p-default">
+																	<input type="checkbox">
+																	<div class="state">
+																		<label></label>
+																	</div>
+																</div>
+																<a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Info</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>Adept</td>
+														<td>5</td>
+														<td>
+															<input type="number" class="btn btn-dark btn-dark-input">
+														</td>
+														<td>
+															<div class="float-right">
+																<div class="pretty p-default">
+																	<input type="checkbox">
+																	<div class="state">
+																		<label></label>
+																	</div>
+																</div>
+																<a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Info</a>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>Adept</td>
+														<td>5</td>
+														<td>
+															<input type="number" class="btn btn-dark btn-dark-input">
+														</td>
+														<td>
+															<div class="float-right">
+																<div class="pretty p-default">
+																	<input type="checkbox">
+																	<div class="state">
+																		<label></label>
+																	</div>
+																</div>
+																<a href="#" data-toggle="modal" data-target="#adept" class="btn btn-dark">Info</a>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
-									<div class="col-sm-10" style="padding: 0">
-										<p>test</p>
+									<div class="row">
+										<div class="col-sm-6">
+											<a href="checkout.html" class="btn btn-dark">Checkout</a>
+										</div>
+										<div class="col-sm-6">
+											<a href="#" class="float-md-right btn btn-red">Delete Selected (num)</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -123,10 +148,28 @@
 					</div>
 				</div>
 			</div>
-    </div>
-  </div>
+		</div>
+	</div>
 </div>
-<div class="dark-modal modal fade ui-draggable" id="adept" tabindex="-1" role="dialog" aria-labelledby="adept" aria-hidden="true">
+<div class="dark-modal modal fade ui-draggable" id="cart" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="cart-title">Title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="dark-modal modal fade ui-draggable" id="adept" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
