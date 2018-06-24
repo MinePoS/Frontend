@@ -154,11 +154,17 @@ body > .container {
 .col-md-12 {
   padding: 0 5px;
 }
+.col-sm-2 {
+  width: 25%;
+}
+.col-sm-4 {
+  width: 33.333333%;
+}
 .col-sm-6 {
   width: 50%;
 }
-.col-sm-2 {
-  width: 25%;
+.col-sm-8 {
+  width: 66.666667%;
 }
 .col-sm-10 {
   width: 75%;
@@ -173,6 +179,19 @@ body > .container {
 .table-custom a {
   margin-left: 1vw;
 }
+.btn-dark[type="number"] {
+  padding-right: 1vh;
+  padding-left: 3.5vh;
+}
+.table-custom .btn-dark[type="number"] {
+  width: 12vh;
+}
+.table-custom th {
+  padding: .75rem 1vw;
+}
+.cart-button-row .col-sm-8, .cart-button-row .col-sm-4 {
+  padding: 0;
+}
 .p-default {
   vertical-align: middle;
 }
@@ -183,6 +202,11 @@ body > .container {
   margin-bottom: 0;
   font-size: 3vh;
   margin-left: 1vh;
+}
+.payments hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top: 1px solid #ffffff;
 }
 .footer hr {
   background: #1e2127;
